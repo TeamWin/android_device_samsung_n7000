@@ -42,3 +42,17 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/n7000/BoardConfigVendor.mk
+
+# F2FS Filesystem
+TARGET_USERIMAGES_USE_F2FS := true
+
+# TWRP
+TW_THEME := portrait_hdpi
+TWRP_NEW_THEME := true
+HAVE_SELINUX := true
+TW_MAX_BRIGHTNESS := 255
+TW_INCLUDE_CRYPTO := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/s5p-tmu/temperature"
